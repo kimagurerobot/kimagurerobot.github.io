@@ -62,7 +62,7 @@ header ul li a {
 }
 header ul li a::after {
   content: "";
-  height: 1px;
+  height: .5px;
   width: 0;
   position: absolute;
   left: 0;
