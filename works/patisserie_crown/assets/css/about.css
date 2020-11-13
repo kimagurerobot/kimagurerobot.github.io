@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+/*こだわりのcss*/
+main {
+  padding-right: 45px;
+  padding-left: 45px;
+}
+section {
+  display: flex;
+  margin-bottom: 90px;
+}
+section.sweet {
+  margin-bottom: 30px;
+}
+
+section.access{
+	margin-bottom:0;
+	}
+	
+.about .section_text, .sweet .section_text {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.sozai .section_text {
+  padding-top: 30px;
+  padding-right: 30px;
+}
+section .desc {
+  line-height: 33px;
+}
+section h2 {
+  margin-bottom: 20px;
+}
+.profile {
+  padding-top: 35px;
+}
+
+.profile .name {
+  margin-bottom: 10px;
+   font-size: 22px;
+}
+
+.profile .name dt{
+	float:left;
+	padding-right: 40px;
+	}
+	
+	.profile .name dd{
+		border-bottom: 2px dotted #ff9e9e;
+		}
+
+@media screen and (max-width:640px) {
+  main > h1 img {
+    width: 30%;
+	
+  }
+  section.about{
+    flex-direction: column-reverse;
+    text-align: center;
+	  margin-bottom:30px;
+  }
+	
+	.sozai{
+    flex-direction: column;
+    text-align: center;
+		 margin-bottom:30px;
+  }
+	
+	.sweet {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  section > p img {
+    width: 70%;
+  }
+	
+	section > p{
+		padding-top:12px;
+		
+	}
+  .about .section_text, .sweet .section_text, .sozai .section_text {
+    padding-right: 8vw;
+    padding-left: 8vw;
+  }
+  .about h2 img {
+    width: 70%;
+  }
+  .sozai h2 img {
+    width: 50%;
+  }
+  .sweet h2 img {
+    width: 54%;
+  }
+  .section_text .desc {
+    text-align: left;
+  }
+  .profile .name{
+    font-size: 16px;
+  }
+  
+  .profile .name dt{
+	  float:none;
+	  padding-right:0;
+	  }
+	  
+	  .profile .name dt {
+    border-bottom: 2px dotted #ff9e9e;
+	margin-bottom: 10px;
+}
+
+.profile .name dd{
+	border:none;
+	}
+	  
+  
+  main {
+    padding: 0;
+  }
+}

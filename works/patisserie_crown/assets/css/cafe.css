@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+/*カフェのcss*/
+main {
+  padding-right: 45px;
+  padding-left: 45px;
+}
+/*スペース紹介のセクション*/
+.cafe_space, .coffee {
+  display: flex;
+  margin-bottom: 90px;
+}
+.cafe_space .section_text {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+/*コーヒー豆紹介のセクション*/
+.coffee .section_text {
+  padding-top: 30px;
+  padding-right: 30px;
+}
+/*カフェメニューのセクション*/
+.cafe_menu {
+  display: flex;
+  justify-content: space-between;
+}
+.coffee_menu, .tea_menu {
+  display: flex;
+}
+.cafe_menu dt {
+  float: left;
+  clear: left;
+  width: 175px;
+}
+.cafe_menu dd {
+  padding-left: 175px;
+  border-bottom: 2px dotted #ff9e9e;
+  margin-bottom: 20px;
+}
+.coffee_menu .section_text, .tea_menu .section_text {
+  padding-right: 50px;
+}
+section h2 {
+  margin-bottom: 20px;
+}
+.section_text .desc {
+  line-height: 33px;
+}
+.cafe_menu {
+  margin-bottom: 100px;
+}
+.cafe_menu h2 {
+  margin-bottom: 33px;
+}
+@media screen and (max-width:640px) {
+  main {
+    padding: 0;
+  }
+  main > h1 img {
+    width: 25%;
+  }
+  .cafe_space{
+    flex-direction: column-reverse;
+    text-align: center;
+	  margin-bottom:30px;
+  }
+	
+	.coffee {
+    flex-direction: column;
+    text-align: center;
+		 margin-bottom:30px;
+  }
+  
+  .cafe_space .section_text {
+	   padding-left: 8vw;
+	  }
+	  
+	  .coffee .section_text {
+		  padding-right:8vw;
+		  }
+  
+  
+  .section_text {
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
+  section > p img {
+    width: 70%;
+  }
+  .section_text .desc {
+    text-align: left;
+  }
+  .cafe_space h2 img {
+    width: 57%;
+  }
+  .coffee h2 img {
+    width: 65%;
+  }
+  .cafe_menu {
+    text-align: center;
+	margin-bottom: 40px;
+  }
+  .coffee_menu .section_text, .tea_menu .section_text {
+   padding-right: 12vw;
+    padding-left: 12vw;
+  }
+	
+	.cafe_menu {
+    flex-direction: column;
+  }
+  .coffee_menu, .tea_menu {
+    flex-direction: column;
+  }
+	
+	.coffee_menu{
+		padding-bottom:30px;
+	}
+  .coffee_menu > p img, .tea_menu > p img {
+    width: 60%;
+  }
+}

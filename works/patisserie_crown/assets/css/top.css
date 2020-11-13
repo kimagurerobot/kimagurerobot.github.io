@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*トップのcss*/
+
+.totop {
+	padding-right: 45px;
+}
+
+
+ @media screen and (max-width:640px) {
+	.totop {
+	padding-right: 8vw;
+} 
+	 
+	 
+	 
+.news dt {
+	float: none;
+	width: auto;
+}
+.news dd {
+	padding-left: 50px;
+}
+#slide ul, #slide ul li {
+	position: static;
+}
+.news dl {
+	line-height: 22px;
+}
+.news dt img {
+	height: 16px;
+}
+
+	 .pickup{
+		 margin-bottom:25px;
+	 }
+	 
+.pickup ul {
+	width: 100%;
+	flex-direction: column;
+	padding:0;
+}
+.pickup img {
+	width: 70%;
+}
+.pickup p, .pickup .details {
+	text-align: center;
+}
+.concept, .commit {
+	flex-direction: column-reverse;
+	padding: 0;
+	text-align: center;
+}
+
+.commit{
+	margin-bottom:40px;
+	}
+
+.concept img, .commit img {
+	width: 70%;
+}
+.concept_text p, .commit_text p {
+	text-align: left;
+}
+.concept_text, .commit_text {
+	padding-right: 8vw;
+	padding-left:8vw;
+	padding-bottom:30px;
+}
+.concept .details, .commit .details {
+	width: 40%;
+	height: 35px;
+}
+.concept .details a, .commit .details a {
+	line-height: 35px;
+}
+section h1 {
+	width: 100%;
+	text-align: center;
+}
+section h1 img {
+	width: 40%;
+}
+.concept h1 img, .commit h1 img {
+	width: 40%;
+}
+.pickup h1 img {
+	width: 40%;
+}
+.news h1 img {
+	width: 30%;
+}
+
+.pickup li{
+	width:auto;
+	padding-bottom:30px;
+	}
+	
+	.start{
+		display:none;
+		}
+
+
+}

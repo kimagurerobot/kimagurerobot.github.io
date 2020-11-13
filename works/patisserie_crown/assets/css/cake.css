@@ -1,0 +1,262 @@
+@charset "utf-8";
+/* CSS Document */
+/*ケーキのcss*/
+main {
+  padding-right: 45px;
+  padding-left: 45px;
+}
+/*ケーキのボタン*/
+.cake_btn ul {
+  display: flex;
+  justify-content: space-around;
+}
+.cake_btn li {
+  flex: 1;
+  text-align: center;
+  border-right: 2px dashed #ff9e9e;
+}
+.cake_btn li a {
+  display: block;
+  width: 100%;
+  transition: opacity .3s;
+}
+.cake_btn li a:hover {
+  opacity: .5;
+}
+.cake_btn li:last-child {
+  border: none;
+}
+/*レスポンシブ用ケーキボタン*/
+.res_cakebtn {
+  display: none;
+}
+/*バースデーセクション*/
+.birthday {
+  display: flex;
+  padding-top: 100px;
+  margin-bottom: 90px;
+}
+.birthday .section_text {
+  padding-top: 30px;
+  padding-right: 30px;
+}
+.section_text .desc {
+  line-height: 33px;
+}
+section h2 {
+  margin-bottom: 20px;
+}
+section ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+section ul li {
+  width: 260px;
+  padding-bottom: 40px;
+}
+section a {
+  color: #000;
+  text-decoration: none;
+}
+#gateau, #gateau_sec, #hole {
+  margin-bottom: 50px;
+}
+#chiristmas {
+  margin-bottom: 60px;
+}
+/*ここからモーダル*/
+.modal {
+  width: 800px;
+  height: 410px;
+  background-color: #fff;
+  padding: 25px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: none;
+}
+.modal_img {
+  float: left;
+  padding-right: 30px;
+}
+.modal_title span {
+  border-left: 6px solid #ff9e9e;
+  padding-left: 20px;
+}
+.modal_title {
+  margin-bottom: 30px;
+	font-size:24px;
+}
+.modal_title img {
+  vertical-align: sub;
+}
+.modal_desc {
+  padding-top: 30px;
+}
+.modal_desc .price {
+  font-size: 20px;
+  text-align: right;
+  padding-top: 30px;
+  padding-right: 40px;
+}
+
+/*ホールケーキの値段*/
+.modal_desc dl.price{
+	display:flex;
+	padding-right:0;
+	
+}
+
+.modal_desc dl.price dd{
+	padding-right:15px;
+}
+
+.modal_desc dl.price dd:last-child{
+	padding-right:0;
+}
+
+
+
+#bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .4);
+  z-index: 5;
+}
+@media screen and (max-width:640px) {
+  main {
+    padding: 0;
+  }
+  main > h1 img {
+    width: 23%;
+  }
+  .cake_btn {
+    padding-right: 10px;
+    padding-left: 10px;
+    flex-wrap: wrap;
+  }
+  .cake_btn ul {
+    flex-direction: column;
+  }
+  .cake_btn ul li {
+    border: none;
+    margin-bottom: 10px;
+  }
+  .birthday {
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+  .birthday .section_text {
+    padding-left: 8vw;
+	padding-right:8vw;
+  }
+  .birthday > p img {
+    width: 70%;
+  }
+  .section_text .desc {
+    text-align: left;
+  }
+  #gateau, #gateau_sec, #hole, #chiristmas {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  #chiristmas{
+	 margin-bottom:0; 
+	  }
+  
+  #gateau h2 img {
+    width: 30%;
+  }
+  #gateau_sec h2 img {
+    width: 36%;
+  }
+  #hole h2 img {
+    width: 50%;
+  }
+  #chiristmas h2 img {
+    width: 50%;
+  }
+  #gateau li, #gateau_sec li, #hole li, #chiristmas li {
+    width: 50%;
+  }
+  #gateau li img, #gateau_sec li img, #hole li img, #chiristmas li img {
+    width: 85%;
+  }
+  .modal {
+    width: calc(100vw - 15vw);
+    height: calc(100vh - 25vh);
+  }
+  /*モーダル関連 */
+	
+	
+	.modal_title {
+    margin-bottom: 7px;
+    font-size: 20px;
+}
+	
+	
+  .modal_img {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+  }
+  .modal_img {
+    float: none;
+  }
+  .modal_desc {
+    padding-top: 15px;
+  }
+  .modal_desc .price {
+	  font-size:18px;
+	  padding-top:10px;
+	  padding-right:0;
+  }
+	
+	/*ホールケーキのねだんの部分*/
+	.modal_desc dl.price{
+		font-size:16px;
+		}
+	
+	.modal_desc dl.price dd{
+	padding-right:7px;
+}
+	
+  .cake_btn {
+    display: none;
+  }
+  .res_cakebtn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .res_cakebtn li {
+    background-color: #ff7f7f;
+    width: 40%;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 30px;
+    line-height: 30px;
+  }
+  .res_cakebtn a {
+    color: #fff;
+    text-decoration: none;
+	display:block;
+	width:100%;
+	height:100%;
+  }
+  .birthday h2 img {
+    width: 76%;
+  }
+}

@@ -1,0 +1,475 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, h1, h2, h3, p, ul, dl, dt, dd, table, tr, th, td {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+img {
+	vertical-align: bottom;
+}
+body {
+	font-size: 18px;
+	background-color: #fff9f9;
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+#wrap {
+	width: 1280px;
+	margin-right: auto;
+	margin-left: auto;
+}
+/*header*/
+header {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 20px;
+	padding-bottom: 15px;
+}
+/*ハンバーガーボタン*/
+.humberger_btn {
+	width:10%;
+	display: none;
+}
+/*レスポンシブのナビゲーション*/
+.res_nav {
+	display: none;
+}
+address {
+	font-style: normal;
+	color: #663f3f;
+}
+address dl {
+	padding-top: 20px;
+}
+address dt {
+	float: left;
+	clear: left;
+	width: 60px;
+}
+address dd {
+	padding-left: 60px;
+}
+/*nav*/
+
+nav {
+	top: 0;
+	left: 50%;
+	z-index: 3;
+}
+nav ul {
+	display: flex;
+}
+nav ul li {
+	width: 256px;
+	height: 90px;
+	background-color: #ff9e9e;
+	border-right: 2px dotted #fff;
+	transition: all .4s;
+}
+nav ul li:last-child {
+	border: none;
+}
+nav ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 0;
+	line-height: 0;
+	color: transparent;
+}
+nav ul li:hover {
+	background-color: #ffd1d1;
+}
+/*選ばれているナビゲーション*/
+nav ul li.current {
+	background-color: #ffd1d1;
+}
+nav ul li.current a {
+	pointer-events: none;
+}
+nav .about a {
+	background-image: url(../images/nav_about.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+nav .cake a {
+	background-image: url(../images/nav_cake.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+nav .cafe a {
+	background-image: url(../images/nav_cafe.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+nav .shop a {
+	background-image: url(../images/nav_shop.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+nav .contact a {
+	background-image: url(../images/nav_contact.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/*ここからmain_visual*/
+
+#slide ul {
+	position: relative;
+}
+#slide ul li {
+	position: absolute;
+}
+#button ul {
+	padding-top: 725px;
+	width: 170px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#button li {
+	background-color: #ffcccc;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	float: left;
+	margin-right: 30px;
+}
+#button li.target {
+	background-color: #ff7f7f;
+}
+#button li:last-child {
+	margin: 0;
+}
+#button li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 0;
+	line-height: 0;
+	color: transparent;
+}
+/*section共通の余白*/
+section h1 {
+	padding-bottom: 30px;
+}
+/*下層ページの大きい見出しの共通*/
+main>h1 {
+	text-align: center;
+	padding-top: 40px;
+	margin-bottom: 100px;
+}
+/*news_section*/
+.news {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 60px;
+}
+.news h1 {
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+.news dl {
+	line-height: 35px;
+}
+.news dt {
+	float: left;
+	clear: left;
+	width: 220px;
+}
+.news dt img {
+	vertical-align: middle;
+	padding-left: 10px;
+}
+.news dd {
+	padding-left: 220px;
+}
+/*pickup_section*/
+.pickup {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 120px;
+}
+.pickup ul {
+	width: 1280px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+.pickup li {
+	width: 409px;
+}
+.pickup_text {
+	text-align: center;
+	padding-top: 5px;
+}
+.pickup .details {
+	text-align: right;
+}
+.pickup .details a {
+	color: #000;
+	text-decoration: none;
+	border-bottom: 2px solid #ff7f7f;
+	padding-bottom: 5px;
+	transition: color .3s;
+}
+.pickup .details a::after {
+	content: ">";
+	padding-left: 10px;
+}
+.pickup .details a:hover {
+	color: rgba(0,0,0,.5);
+}
+/*concept_section commit_section*/
+.concept {
+	margin-bottom: 80px;
+}
+.commit {
+	margin-bottom: 100px;
+}
+.concept, .commit {
+	padding: 0 45px;
+	line-height: 33px;
+	display: flex;
+}
+.concept_text, .commit_text {
+	padding-top: 30px;
+	padding-left: 30px;
+}
+.concept .details, .commit .details {
+	width: 190px;
+	height: 50px;
+	margin-top: 10px;
+	margin-left: auto;
+}
+.concept a, .commit a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	color: #fff;
+	line-height: 50px;
+	text-align: center;
+	background-color: #ff7f7f;
+	border-radius: 10px;
+	transition: opacity .3s;
+}
+.concept a:hover {
+	opacity: .5;
+}
+.commit a:hover {
+	opacity: .5;
+}
+/*totop*/
+.totop {
+	text-align: right;
+	margin-bottom: 30px;
+	transition: opacity .3s;
+}
+.totop:hover {
+	opacity: .5;
+}
+/*access_section*/
+.access {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+iframe{
+	border:none;
+	}
+/*footer*/
+footer {
+	background-color: #ff7f7f;
+	color: #fff;
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-top: 20px;
+}
+.footer_inner {
+	display: flex;
+	margin-bottom: 10px;
+}
+.footer_logo {
+	width: 135px;
+}
+.footer_content {
+	flex: 1;
+}
+.footer_content a {
+	transition: opacity .3s;
+}
+.footer_content a:hover {
+	opacity: .5;
+}
+footer .sns {
+	display: flex;
+	width: 250px;
+	margin-left: auto;
+}
+footer .sns li {
+	padding-left: 20px;
+}
+.footer_nav {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 20px;
+}
+.footer_nav a {
+	color: #fff;
+}
+.footer_logo {
+	width: 135px;
+}
+.copy {
+	text-align: center;
+}
+	
+
+	
+	/*ここからレスポンシブ*/
+	@media screen and (max-width:640px) {
+body {
+	font-size: 14px;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+#wrap {
+	width: auto;
+}
+header {
+	position: fixed;
+	left: 0;
+	background-color:rgba(255,214,214,.7);
+	padding: 10px;
+	z-index: 3;
+	box-sizing: border-box;
+	width: 100%;
+	height:8.5vh;
+	
+}
+nav {
+	display: none;
+}
+header address {
+	display: none;
+}
+.header_logo{
+	height:100%;
+}
+
+/*下層ページの大きい見出しの共通*/
+main>h1 {
+	margin-bottom:30px;
+	padding-top:15px;
+	}
+
+.footer_logo{
+	width:10%;
+	}
+
+.header_logo img{
+	height:100%;
+	}
+
+.humberger_btn {
+	display: block;
+	height:100%;
+}
+
+.humberger_btn img{
+	height:100%;
+	}
+
+/*レスポンシブ時のナビゲーション*/
+.res_nav {
+	position: fixed;
+	left: 50%;
+	top:8.5vh;
+	transform: translateX(-50%);
+	width: 100%;
+}
+.res_nav li {
+	text-align: center;
+	background-color: rgba(255,158,158,.9);
+	border-bottom: 1px dotted #fff;
+	height:50px;
+	line-height:50px;
+}
+
+		
+.res_nav li a {
+	text-decoration: none;
+	color: #fff;
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+/*メインヴィジュアルを下げる*/
+.main_visual{
+	padding-top:8.5vh;
+	}
+
+#button {
+	display: none;
+}
+.totop {
+	padding-right: 8vw;
+}
+.totop img {
+	width: 20%;
+}
+.footer_nav {
+	display: none;
+}
+
+footer {
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+footer .sns {
+	width: 40%;
+}
+.access h1 img {
+	width: 30%;
+}
+
+.access h2{
+	width:100%;
+	text-align:center;
+	}
+	
+	.access h2 img {
+	width: 30%;
+}
+
+iframe {
+	width:100%;
+  height: 50vw;
+}
+
+
+section h1 {
+	width: 100%;
+	text-align: center;
+}
+
+
+
+}

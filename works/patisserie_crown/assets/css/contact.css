@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document */
+main {
+  padding-right: 45px;
+  padding-left: 45px;
+}
+table {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+table th {
+  font-weight: normal;
+  text-align: left;
+  width: 330px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+table th img {
+  padding-left: 15px;
+  vertical-align: middle;
+}
+table td {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 450px;
+}
+table tr {
+  border-bottom: 2px dotted #ff9e9e;
+}
+table tr:last-child {
+  border: none;
+}
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+  font-size: 18px;
+  border: 1px solid #ff9e9e;
+  padding: 5px;
+  width: 80%;
+}
+input[type="radio"] {
+  margin-left: 25px;
+}
+textarea {
+  resize: none;
+}
+input[type="submit"] {
+  width: 200px;
+  height: 50px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 18px;
+  background-color: #ff7f7f;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+form {
+  margin-bottom: 100px;
+}
+form .alert {
+  font-size: 14px;
+  color: #ff7f7f;
+  padding-left: 17px;
+  display: none;
+}
+
+section h2 {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width:640px) {
+  main {
+    padding-left: 0px;
+    padding-right: 0px;
+	/*ヘッダーの分、メインを下げる*/
+	padding-top:8.5vh;
+  }
+  main > h1 img {
+    width: 40%;
+  }
+  form {
+    padding-right: 8vw;
+    padding-left: 8vw;
+	margin-bottom: 40px;
+  }
+  form th img {
+    height: 14px;
+    width: auto;
+  }
+  form th {
+    width: 30%;
+  }
+  form td {
+    width: 70%;
+  }
+  input[type="radio"] {
+    margin: 0;
+  }
+  
+  input[type="text"], input[type="email"], input[type="tel"], textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+  
+}
