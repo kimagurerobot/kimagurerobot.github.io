@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, h1, h2, h3, h4, p, ul, dl, dd, tr, th, td, table {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+img {
+	vertical-align: bottom;
+}
+a {
+	color: #362e2b;
+	text-decoration: none;
+}
+body {
+	font-family: "游明朝体", 'Yu Mincho', 'YuMincho', 'Noto Serif JP', serif;
+}
+/*ここからmain*/
+
+main section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+main h3 {
+	align-self: start;
+}
+.section_disc {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+main table {
+	border: 1px solid #000;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+main table th {
+	border: 1px solid #000;
+	background-color: #b39d45;
+	padding: 12px 27px;
+}
+main table td {
+	border: 1px solid #000;
+	text-align: center;
+	padding: 12px 27px;
+}
+main .hotel table {
+	margin-bottom: 60px;
+}
+main .hotel table:last-of-type {
+	margin-bottom: 20px;
+}
+ @media screen and (max-width:640px) {
+main table th {
+	padding: 0;
+}
+main table td {
+	padding: 0;
+}
+main .disc {
+	padding-right: 10px;
+	padding-left: 10px;
+	text-indent: 1rem;
+}
+main .disc p {
+	padding-bottom: 10px;
+	text-align: left;
+}
+}

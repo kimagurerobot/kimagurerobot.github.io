@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* CSS Document */
+
+#pets section:last-of-type {
+	margin-bottom: 150px;
+}
+#pets section ul {
+	padding-left: 30px;
+}
+#pets section ul img {
+	opacity: 0.7;
+}
+#pets section ul img:hover {
+	opacity: 1;
+}
+#bg {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, .4);
+	cursor: pointer;
+}
+/*#modal .modal_wrap{
+	width: 780px;
+	height: 520px;
+	position:absolute;
+	top:0;
+	right:0;
+	left:0;
+	bottom:0;
+	margin:auto;
+}*/
+/*#modal li:first-of-type {
+	display: block;
+}*/
+
+ 
+	
+
+
+#modal {
+	width: 780px;
+	height: 520px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 3;
+	display: none;
+}
+#modal ul {
+	position: relative;
+}
+#modal ul li {
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	width: 780px;
+	height: 520px;
+	position: absolute;
+}
+#modal .modal_text {
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 265px;
+	box-sizing: border-box;
+	padding: 10px;
+	
+	position: relative;
+	top: 220px;
+}
+
+#modal .modal_text p {
+	padding-top: 1rem;
+}
+#modal dl dt {
+	float: left;
+	clear: left;
+}
+#modal .white {
+	color: #fff;
+}
+#modal .brown {
+	color: #362e2b;
+}
+#modal .left {
+	left: 20px;
+}
+#modal .right {
+	left: 500px;
+}
+#modal #dog_1 {
+	background-image: url(../images/service/p_modal_dog1.jpg);
+}
+#modal #dog_2 {
+	background-image: url(../images/service/p_modal_dog2.jpg);
+}
+#modal #dog_3 {
+	background-image: url(../images/service/p_modal_dog3.jpg);
+}
+#modal #cat_1 {
+	background-image: url(../images/service/p_modal_cat1.jpg);
+}
+#modal #cat_2 {
+	background-image: url(../images/service/p_modal_cat2.jpg);
+}
+#modal #cat_3 {
+	background-image: url(../images/service/p_modal_cat3.jpg);
+}
+ @media screen and (max-width:640px) {
+.flex {
+	flex-direction: column;
+}
+main ul img {
+	width: 100%;
+}
+#pets section ul {
+	padding-left: 0;
+}
+#pets section ul li {
+	padding-bottom: 30px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#pets section:last-of-type {
+	margin-bottom: 80px;
+}
+main .disc {
+	padding-right: 10px;
+	padding-left: 10px;
+	text-indent: 1rem;
+}
+main .disc p {
+	padding-bottom: 10px;
+	text-align: left;
+}
+/*モーダル関連*/
+#modal {
+	width: 100%;
+}
+#modal ul li {
+	width: 100%;
+	background-size: contain;
+}
+#modal .modal_text {
+	display: none;
+}
+#pets section ul img {
+	opacity: 1;
+}
+
+.modal_btn a{
+	pointer-events:none;
+	}
+}

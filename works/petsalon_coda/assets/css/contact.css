@@ -1,0 +1,334 @@
+@charset "utf-8";
+/* CSS Document */
+
+main #contact {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*main #contact dl dt{
+	float:left;
+	clear: left;
+	padding:1em;
+	    width: 200px;
+    text-align: right;
+}
+
+main #contact dl dd {
+    margin: 0;
+    padding: 18px 0 1em 16em;
+    width: 310px;
+}
+	
+main #contact .form{
+	margin-left:auto;
+	margin-right:auto;
+	width: 90%;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+input, select,textarea {
+	font-family: "游明朝体", 'Yu Mincho', 'YuMincho', 'Noto Serif JP', serif;
+	width:300px;
+	height: 25px;
+	box-sizing: border-box;
+}
+select {
+	padding-left: 8px;
+}
+main #content .form  dd select::-ms-expand{
+	
+	display: none;
+}
+main #contact .question {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 300ox;
+	box-sizing: border-box;
+	font-size: 93%;
+	background-image:url(../images/service/c_arrow.png);
+	background-repeat: no-repeat;
+	background-size: 12px 10px;
+	background-position: right 10px center;
+}
+main #contact .form .year input{
+	width:60px;
+	height:25px;
+}
+main #contact .form .month input{
+	width:40px;
+	height:25px;
+}
+main #contact .form .day input{
+	width:40px;
+	height:25px;
+}
+main #contact .form .time select{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 112px;
+	font-size: 93%;
+	line-height: 1.1em;
+	background-image:url(../images/service/c_arrow.png);
+	background-repeat: no-repeat;
+	background-size: 12px 10px;
+	background-position: right 10px center;
+}
+main #contact .come{
+	display:flex;
+	padding-left: 24px;
+}
+main #contact .product select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	font-size: 93%;
+	line-height: 1.1em;
+	background-image:url(../images/service/c_arrow.png);
+	background-repeat: no-repeat;
+	background-size: 12px 10px;
+	background-position: right 10px center;
+	
+	
+}
+textarea{
+	height: 200px;
+	padding:10px;
+	font-family: "游明朝体", 'Yu Mincho', 'YuMincho', 'Noto Serif JP', serif;
+	resize:none;
+}
+main #contact .form .submit input{
+	background-color:#b39d45;
+	color:#fff;
+	width:200px;
+	height:40px;
+	margin-left:255px;
+}
+
+
+*/
+
+#contact form {
+	width: 100%;
+}
+#contact form dt {
+	float: left;
+	clear: left;
+	width: 50%;
+	box-sizing:border-box;
+	padding-right: 30px;
+	text-align: right;
+	position:relative;
+}
+#contact form dd {
+	padding-left: 50%;
+	box-sizing: border-box;
+	margin-bottom: 30px;
+}
+#contact form dd input,
+#contact form dd select,
+#contact form dd textarea {
+	box-sizing: border-box;
+	width: 300px;
+	height: 25px;
+	font-family: "游明朝体", 'Yu Mincho', 'YuMincho', 'Noto Serif JP', serif;
+}
+.required::before {
+	content: "必須";
+	color: #fff;
+	box-sizing: border-box;
+	font-size: 70%;
+	padding: 3px 5px;
+	background-color: #b39d45;
+	position:absolute;
+	left: 100px;
+}
+#contact form select{
+	padding-left: 8px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 112px;
+	font-size: 93%;
+	line-height: 1.1em;
+	background-image:url(../images/service/c_arrow.png);
+	background-repeat: no-repeat;
+	background-size: 12px 10px;
+	background-position: right 10px center;
+}
+#contact form dl .come {
+	padding-left: 0;
+	display: flex;
+}
+#contact form dl .year {
+	width: 80px;
+}
+#contact form dl .date {
+	width: 50px;
+}
+#contact form dd textarea {
+	height: 200px;
+	resize: none;
+}
+#contact form .alert {
+	display: block;
+	color: #b39d45;
+}
+#contact form .submit {
+	text-align: center;
+}
+#contact form .submit input {
+	font-family: "游明朝体", 'Yu Mincho', 'YuMincho', 'Noto Serif JP', serif;
+	text-align: center;
+	background-color:#b39d45;
+	color:#fff;
+	width:200px;
+	height:60px;
+	letter-spacing: 0.8rem;
+	box-shadow: 5px 5px 10px rgba(0,0,0,.5);
+	text-shadow: 1px 1px 5px #000;
+	font-size:150%;
+	font-weight:bold;
+	border:none;
+	appearance:none;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#contact form .submit input:hover {
+	box-shadow: 3px 3px 10px rgba(0,0,0,.5);
+	transform: translate3d(0, 3px, 0);
+}
+ @media screen and (max-width:640px) {
+	 
+ 
+ main #contact {
+	 width: 100%;
+ }
+	main #contact dl{
+		width:100%
+	}
+	main #contact {
+		margin-left:auto;
+		margin-right:auto;
+	}
+	main #contact .form{
+		margin-left:auto;
+		margin-right:auto;
+	}
+	main #contact dl {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	main #contact dl dt {
+		float: none;
+		width: auto;
+		text-align: center;
+	}
+	main #contact dl dt::before {
+		position: static;
+		margin-right: 1rem;
+	}
+	main #contact dl dd {
+		padding-left:0;
+		width:auto;
+		text-align:center;
+	}
+	#contact form dl .date {
+		margin-bottom: 5px;
+	}
+	main #contact dl .come{
+		flex-wrap:wrap;
+		justify-content:center;
+	}
+	
+	
+	
+	/*main #contact dl dt{
+	display:inline-block;
+	list-style: none;
+	
+	width:95%;
+	display: list-item;
+	padding:10px 0px;
+	text-align: -webkit-center;
+	
+	 
+		
+	}
+	
+	main #contact dl dd {
+		width: 95%;
+		display: list-item;
+		padding: 0px 40px;
+		margin-right: auto;
+		margin-left: auto;
+	
+	 
+	   
+	}
+		
+	main #contact .form{max-width:100%;
+	}
+	
+	input, textarea, select {
+		width:90%;
+	}
+	
+	
+	main #contact .form .year input{
+		width:100px;
+		height:25px;
+	}
+	
+	main #contact .come {
+	display: flex;
+		padding-left: 40px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	
+	main #contact .form .text_year{
+		margin-bottom: 30px;}
+	main #contact .form .month input{
+		width:100px;
+		height:25px;
+	}
+	main #contact .form .text_month{
+		margin-bottom: 30px;}
+	main #contact .form .day input{
+		width:60px;
+		height:25px;
+	}
+	main #contact .form .text_day{
+		margin-bottom: 30px;}
+	
+	main #contact .form .time select{
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		margin-bottom: 20px;
+		padding: 7px 150px 7px 10px;
+		font-size: 93%;
+		line-height: 1.1em;
+		background-image:url(../images/service/c_arrow.png);
+		background-repeat: no-repeat;
+		background-size: 12px 10px;
+		background-position: right 10px center;
+	}
+	
+	main #contact .form .submit input {
+		
+		margin-left: 190px;
+		
+	}
+	
+	*/
+	 
+ 
+ }
